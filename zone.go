@@ -31,10 +31,10 @@ type Zone struct {
 	Rrsets []RrSet `json:"rrsets,omitempty"`
 
 	// The SOA serial number
-	Serial int32 `json:"serial,omitempty"`
+	Serial int64 `json:"serial,omitempty"`
 
 	// The SOA serial notifications have been sent out for
-	NotifiedSerial int32 `json:"notified_serial,omitempty"`
+	NotifiedSerial int64 `json:"notified_serial,omitempty"`
 
 	//  List of IP addresses configured as a master for this zone (“Slave” type zones only)
 	Masters []string `json:"masters,omitempty"`
